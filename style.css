@@ -16,20 +16,20 @@ h1 {
   margin-top: 1em;
   margin-bottom: 1em;
   margin-right: 1em;
-  margin-left: 1em;
+  margin-left: 0.4em;
 }
 
 h2 {
   color: #03eca2;
   font-family: 'Mada', sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.05em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
   font-size: 0.95rem;
   line-height: 1.5;
-  margin-top: 5px;
-  margin-bottom: 0px;
-  margin-right: 25px;
-  margin-left: 25px;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  margin-right: 1.7em;
+  margin-left: 1.7em;
 }
 
 h3 {
@@ -37,12 +37,24 @@ h3 {
   font-family: 'Mada', sans-serif;
   font-weight: 700;
   font-stretch: ultra-expanded;
-  font-size: 1.6rem;
+  font-size: 1.55rem;
   line-height: 1.2;
   margin-top: 0.1em;
   margin-bottom: 0.1em;
   margin-right: 1em;
   margin-left: 1em;
+}
+
+h4 {
+  color: #282828;
+  font-family: 'Mada', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+  margin-right: 0.48em;
+  margin-left: 0.48em;
 }
 
 p {
@@ -58,25 +70,19 @@ p {
 
 }
 
-img {
-  width: 100%;
-  height: auto;
+.Logo_Head {
+  width: 4.8em;
+  min-width: 4.8em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  margin-left: 1em;
+  float: left;
 }
 
-Erste {
-  width: 33.33%;
-  float: right;
+.Head {
+  background-color: white;
 }
-
-aside {
-  width: 33.33%;
-  float: right;
-}
-
-
-
-
-
 
 /* ab hier von stefan huber */
 
@@ -88,6 +94,14 @@ aside {
   background-color: blue;
 }
 
+.white {
+  background-color: white;
+}
+
+.green {
+  background-color: #03eca2;
+}
+
 img {
   width: 100%;
   max-width: 100%;
@@ -97,6 +111,7 @@ img {
 .col-1 {
   width: 33.33%;
   float: left;
+  margin-bottom: 25px;
 }
 
 .col-2 {
@@ -110,8 +125,233 @@ img {
   float: left;
 }
 
+.col-4 {
+  width: 50%;
+  float: left;
+}
+
+.col-detail {
+  width: 66.66%;
+  margin: 0 auto;
+}
+
 .columns:after {
   content: "";
   display: table;
   clear: both;
+}
+
+.button1 {
+   background-color: #f9f9f9;
+   color: #03eca2;
+   font-family: 'Mada', sans-serif;
+   font-weight: 700;
+   letter-spacing: 0.02em;
+   font-size: 0.95rem;
+   line-height: 1.5;
+   margin-top: 10px;
+   margin-bottom: 0px;
+   margin-right: 25px;
+   margin-left: 25px;
+   border: 2px solid #03eca2;
+   padding: 4px;
+   cursor: pointer;
+}
+
+a:link {
+  text-decoration:none
+}
+a:visited {
+  text-decoration:none
+}
+a:active {
+  text-decoration:none
+}
+a:hover {
+  text-decoration:none
+}
+
+.box1 {
+  height:50vw;
+  background:#03eca2;
+}
+
+.box2 {
+  height:50vw;
+}
+
+/* Text und Bild mit id */
+
+#container {
+  width: 100%;
+  position: relative;
+}
+#image {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#text {
+  z-index: 100;
+  position: absolute;
+  left: 0.1em;
+  top: 0.2em;
+}
+
+/* Text und hero Bild mit div */
+
+.hero {
+  width:100%;
+  margin:1rem auto;
+  position: relative;
+}
+
+.text {
+  color: white;
+  font-family: 'Mada', sans-serif;
+  font-weight: 700;
+  font-size: 8rem;
+  line-height: 0.8;
+  position: absolute;
+  top:-20%;
+  left:1%;
+  padding:1rem;
+  transform:translateY(-20%);
+
+}
+
+/* Text und Bild mit div */
+
+.image1 {
+   position: relative;
+   width: 100%; /* for IE 6 */
+}
+
+h5 {
+  top: -10%;
+  position: absolute;
+  color: white;
+  font-family: 'Mada', sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 0.8;
+  margin-bottom: 0.1em;
+  margin-left: 0.6em;
+
+}
+
+/* Slider */
+
+.sliderElements,
+.sliderElements figure,
+.sliderControls {
+    margin: 0;
+    padding: 0;
+}
+
+.sliderElements:after {
+    content: ".";
+    display: block;
+    height: .1px;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.cssSlider {
+    overflow-x: hidden;
+}
+
+.sliderElements {
+    list-style: none;
+    position: relative;
+    left: 0;
+    width: 400%;
+    margin-bottom: 1em;
+    -webkit-transition: left .8s ease-in-out;
+    -moz-transition: left .8s ease-in-out;
+    -o-transition: left .8s ease-in-out;
+    transition: left .8s ease-in-out;
+}
+
+.sliderElements > li {
+    float: left;
+    width: 25%;
+    position: relative;
+}
+
+#slide02:checked ~ .sliderElements {
+    left: -100%;
+}
+
+#slide03:checked ~ .sliderElements {
+    left: -200%;
+}
+
+#slide04:checked ~ .sliderElements {
+    left: -300%;
+}
+
+/* Bildunterschrift auf dem Bild positionieren */
+.sliderElements figcaption {
+    display: block;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 1em;
+    padding: .4em;
+    background: #03eca2;
+    color: white;
+    font-family: 'Mada', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+/* Bilder responsive */
+.sliderElements img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* inputs aus dem Blickfeld schieben */
+.cssSlider input {
+    position: absolute;
+    left: -200%;
+}
+
+/* mittige Ausrichtung der Controls - funktioniert im Zusammenspiel mit inline-block */
+.sliderControls {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+/* Controls nebeneinander bringen */
+.sliderControls li {
+    display: inline-block;
+}
+
+/* Controls auf einheitliche Maße bringen und die Ecken abrunden */
+.sliderControls label {
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+    background: #e4dbdb;
+    color: #e4dbdb;
+}
+
+/* Attributselektor und indirekter Nachfahrkombinator zum ansteuern der labels */
+.sliderControls label:hover,
+#slide01:checked ~ .sliderControls label[for="slide01"],
+#slide02:checked ~ .sliderControls label[for="slide02"],
+#slide03:checked ~ .sliderControls label[for="slide03"],
+#slide04:checked ~ .sliderControls label[for="slide04"] {
+    background: #03eca2;
+    color: #03eca2;
 }
