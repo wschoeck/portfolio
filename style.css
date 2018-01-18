@@ -7,6 +7,45 @@ body {
   background-color: #f9f9f9;
 }
 
+.container_1 {
+  margin-top: -100Px;
+  margin-right: 20Px;
+  text-align: right;
+  word-spacing: 0.3em;
+}
+
+.navigation {
+  color: #282828;
+  font-family: 'Mada', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0em;
+  font-size: 0.95rem;
+}
+
+a.navigation.link {
+  color: #282828;
+}
+a.navigation.visited {
+  color: #282828;
+}
+a.navigation.hover {
+  transform: #03eca2;
+}
+a.navigation.active {
+  color: #03eca2;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+
 h1 {
   color: #03eca2;
   font-family: 'Mada', sans-serif;
@@ -24,12 +63,12 @@ h2 {
   font-family: 'Mada', sans-serif;
   font-weight: 700;
   letter-spacing: 0.02em;
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.5;
   margin-top: 1em;
   margin-bottom: 0.5em;
   margin-right: 1.7em;
-  margin-left: 1.7em;
+  margin-left: 1.66em;
 }
 
 h3 {
@@ -37,12 +76,12 @@ h3 {
   font-family: 'Mada', sans-serif;
   font-weight: 700;
   font-stretch: ultra-expanded;
-  font-size: 1.55rem;
+  font-size: 1.8rem;
   line-height: 1.2;
   margin-top: 0.1em;
   margin-bottom: 0.1em;
   margin-right: 1em;
-  margin-left: 1em;
+  margin-left: 0.85em;
 }
 
 h4 {
@@ -57,14 +96,51 @@ h4 {
   margin-left: 0.48em;
 }
 
+h5 {
+  color: #282828;
+  font-family: 'Mada', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.35;
+  margin-top: 0.1em;
+  margin-bottom: 1.6em;
+  margin-right: 0.48em;
+  margin-left: 1em;
+}
+
+h6 {
+  color: #282828;
+  font-family: 'Mada', sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  line-height: 1.45;
+  margin-top: 0.1em;
+  margin-bottom: 0em;
+  margin-right: 0.48em;
+  margin-left: 1.4em;
+}
+
 p {
   color: #282828;
   font-family: 'Mada', sans-serif;
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.4;
+  font-size: 1.15rem;
+  line-height: 1.45;
   margin-top: 1px;
   margin-bottom: 20px;
+  margin-right: 25px;
+  margin-left: 25px;
+
+}
+
+.copy_Footer {
+  color: #282828;
+  font-family: 'Mada', sans-serif;
+  font-weight: 400;
+  font-size: 1.15rem;
+  line-height: 1.45;
+  margin-top: 1px;
+  margin-bottom: 80px;
   margin-right: 25px;
   margin-left: 25px;
 
@@ -78,6 +154,15 @@ p {
   margin-right: 1em;
   margin-left: 1em;
   float: left;
+}
+
+.Logo_Head_2 {
+  width: 12em;
+  min-width: 4.8em;
+  margin-top: 1.4em;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  margin-left: 1em;
 }
 
 .Head {
@@ -132,6 +217,7 @@ img {
 
 .col-detail {
   width: 66.66%;
+  max-width: 42em;
   margin: 0 auto;
 }
 
@@ -164,10 +250,10 @@ a:link {
 a:visited {
   text-decoration:none
 }
-a:active {
+a:hover {
   text-decoration:none
 }
-a:hover {
+a:active {
   text-decoration:none
 }
 
@@ -227,18 +313,30 @@ a:hover {
    width: 100%; /* for IE 6 */
 }
 
-h5 {
-  top: -10%;
+.image1 h5 {
   position: absolute;
+
+
+  top: .2em;
+  margin-left: 0.6em;
+
+
   color: white;
   font-family: 'Mada', sans-serif;
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 10vw;
   line-height: 0.8;
   margin-bottom: 0.1em;
-  margin-left: 0.6em;
-
+  margin-top: 0;
 }
+
+@media screen and (min-width: 600px)  {
+  .image1 h5 {
+    font-size: 0.6rem;
+  }
+}
+
+
 
 /* Slider */
 
@@ -318,8 +416,8 @@ h5 {
 
 /* inputs aus dem Blickfeld schieben */
 .cssSlider input {
-    position: absolute;
-    left: -200%;
+  position: absolute;
+  right: 200%;
 }
 
 /* mittige Ausrichtung der Controls - funktioniert im Zusammenspiel mit inline-block */
@@ -331,6 +429,7 @@ h5 {
 /* Controls nebeneinander bringen */
 .sliderControls li {
     display: inline-block;
+
 }
 
 /* Controls auf einheitliche Maße bringen und die Ecken abrunden */
@@ -354,4 +453,147 @@ h5 {
 #slide04:checked ~ .sliderControls label[for="slide04"] {
     background: #03eca2;
     color: #03eca2;
+}
+
+#slide06:checked ~ .sliderElements {
+    left: -100%;
+}
+
+#slide07:checked ~ .sliderElements {
+    left: -200%;
+}
+
+#slide08:checked ~ .sliderElements {
+    left: -300%;
+}
+
+#slide10:checked ~ .sliderElements {
+    left: -100%;
+}
+
+#slide11:checked ~ .sliderElements {
+    left: -200%;
+}
+
+#slide12:checked ~ .sliderElements {
+    left: -300%;
+}
+
+#slide14:checked ~ .sliderElements {
+    left: -100%;
+}
+
+#slide15:checked ~ .sliderElements {
+    left: -200%;
+}
+
+#slide16:checked ~ .sliderElements {
+    left: -300%;
+}
+
+#slide18:checked ~ .sliderElements {
+    left: -100%;
+}
+
+#slide19:checked ~ .sliderElements {
+    left: -200%;
+}
+
+#slide20:checked ~ .sliderElements {
+    left: -300%;
+}
+
+#slide22:checked ~ .sliderElements {
+    left: -100%;
+}
+
+#slide23:checked ~ .sliderElements {
+    left: -200%;
+}
+
+#slide24:checked ~ .sliderElements {
+    left: -300%;
+}
+
+
+
+/* Attributselektor und indirekter Nachfahrkombinator zum ansteuern der labels */
+.sliderControls label:hover,
+#slide05:checked ~ .sliderControls label[for="slide05"],
+#slide06:checked ~ .sliderControls label[for="slide06"],
+#slide07:checked ~ .sliderControls label[for="slide07"],
+#slide08:checked ~ .sliderControls label[for="slide08"]
+#slide09:checked ~ .sliderControls label[for="slide09"],
+#slide10:checked ~ .sliderControls label[for="slide10"],
+#slide11:checked ~ .sliderControls label[for="slide11"],
+#slide12:checked ~ .sliderControls label[for="slide12"]
+#slide13:checked ~ .sliderControls label[for="slide13"],
+#slide14:checked ~ .sliderControls label[for="slide14"],
+#slide15:checked ~ .sliderControls label[for="slide15"],
+#slide16:checked ~ .sliderControls label[for="slide16"]
+#slide17:checked ~ .sliderControls label[for="slide17"],
+#slide18:checked ~ .sliderControls label[for="slide18"],
+#slide19:checked ~ .sliderControls label[for="slide19"],
+#slide20:checked ~ .sliderControls label[for="slide20"]
+#slide21:checked ~ .sliderControls label[for="slide21"],
+#slide22:checked ~ .sliderControls label[for="slide22"],
+#slide23:checked ~ .sliderControls label[for="slide23"],
+#slide24:checked ~ .sliderControls label[for="slide24"]{
+    background: #03eca2;
+    color: #03eca2;
+}
+
+
+
+.copy {
+  height: 220px;
+
+}
+
+.cssSlider_Detail {
+    overflow-x: hidden;
+    max-width: 66.66%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 50Px;
+    max-width: 39em;
+}
+
+/* inputs aus dem Blickfeld schieben */
+.cssSlider_Detail input {
+  position: absolute;
+  right: 200%;
+}
+
+.Logo_Column {
+  width: 1.9em;
+  min-width: 1.9em;
+  margin-top: -0.03em;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  margin-left: 1.5em;
+  float: left;
+}
+
+.col-detail_2 {
+  width: 92%;
+  max-width: 42em;
+  margin-left: 45Px;
+}
+
+.col-detail_3 {
+  width: 92%;
+  max-width: 42em;
+  margin-left: 45Px;
+  margin-bottom: 80Px;
+}
+
+.cssSlider_Image {
+    overflow-x: hidden;
+    max-width: 66.66%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    padding-top: 50Px;
+    max-width: 39em;
 }
