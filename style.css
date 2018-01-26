@@ -15,23 +15,23 @@ body {
 }
 
 .navigation {
-  color: #282828;
+  /*color: #282828;*/
   font-family: 'Mada', sans-serif;
   font-weight: 700;
   letter-spacing: 0em;
   font-size: 0.95rem;
 }
 
-a.navigation.link {
+a.navigation:link {
   color: #282828;
 }
-a.navigation.visited {
+a.navigation:visited {
   color: #282828;
 }
-a.navigation.hover {
-  transform: #03eca2;
+a.navigation:hover {
+  color: #03eca2 !important;
 }
-a.navigation.active {
+a.navigation:active {
   color: #03eca2;
 }
 
